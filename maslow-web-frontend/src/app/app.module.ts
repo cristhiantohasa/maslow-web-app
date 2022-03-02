@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/commons/header/header.component';
 import { FooterComponent } from './components/commons/footer/footer.component';
-import { ChatWindowComponent } from './components/commons/chat-window/chat-window.component';
+import { SocialBarComponent } from './components/commons/social-bar/social-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ArchitectsComponent } from './components/architects/architects.component';
@@ -17,7 +17,7 @@ import { ContactComponent } from './components/contact/contact.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ChatWindowComponent,
+    SocialBarComponent,
     HomeComponent,
     ProjectsComponent,
     ArchitectsComponent,
