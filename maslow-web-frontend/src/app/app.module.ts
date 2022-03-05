@@ -15,6 +15,7 @@ import { FormComponent } from './components/commons/form/form.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { ProjectComponent } from './components/project/project.component';
+import { ViewLastProjectComponent } from './components/commons/view-last-project/view-last-project.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProjectComponent } from './components/project/project.component';
     FormComponent,
     CardsComponent,
     CardComponent,
-    ProjectComponent
+    ProjectComponent,
+    ViewLastProjectComponent
   ],
   imports: [
     BrowserModule,
