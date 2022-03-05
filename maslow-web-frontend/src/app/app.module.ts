@@ -29,7 +29,7 @@ import { ProjectComponent } from './components/project/project.component';
     SocialBarComponent,
     FormComponent,
     CardsComponent,
-    CardComponent
+    CardComponent,
     ProjectComponent
   ],
   imports: [
