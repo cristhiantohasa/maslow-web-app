@@ -1,0 +1,215 @@
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+} 
+
+#img_fondo{
+    margin-top: 5%;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+}
+
+.imagen_de_fondo{
+    position: relative;
+}
+
+.div_datoscontacto{
+    position:absolute;
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+
+th{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    padding: 10px;
+}
+
+td{
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/*Form*/
+.div_form{
+    width: 375px;
+    height: 560px;
+    background: white;
+    border: 1px solid #aaa;
+    border-radius: 30px; 
+    position:absolute;
+    top: 550px;
+    left: 1100px;
+    transform: translate(-50%, -50%);
+}
+
+.inputWithIcon {
+    position: relative;
+    margin-top: 18px;
+}
+  
+.inputWithIcon i {
+    position: absolute;
+    left: 28px;
+    top: 8px;
+    padding: 9px 8px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+/*Input de tipo text*/
+input[type="text"] {
+    width: 90%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 8px 0 goldenrod;
+}
+  
+.inputWithIcon input[type="text"]{
+    padding-left: 40px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+    color: goldenrod;
+}
+  
+/*Input de tipo email*/
+input[type="email"] {
+    width: 90%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="email"]:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 8px 0 goldenrod;
+}
+  
+.inputWithIcon input[type="email"]{
+    padding-left: 40px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.inputWithIcon input[type="email"]:focus + i {
+    color: goldenrod;
+}
+  
+  
+/*Etiqueta select*/
+select {
+    width: 90%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+select:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 8px 0 goldenrod;
+}
+  
+.inputWithIcon select{
+    padding-left: 40px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+select option .placeholder_option{
+     color: #aaa;
+}
+
+/*Etiqueta textarea*/
+textarea {
+    width: 90%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    margin: 6px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    resize: none;
+}
+
+textarea:focus {
+    border-color: goldenrod;
+    box-shadow: 0 0 8px 0 goldenrod;
+}
+  
+.inputWithIcon textarea{
+    padding-left: 40px;
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+
+/*Checkbox*/
+.div_checkbox{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#button{
+    width: 90%;
+    border: 2px solid goldenrod;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    margin-left: 20px;
+    background: white;
+    color: goldenrod;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#button:hover{
+    color: black;
+    background: goldenrod;
+}
+
+#campos_obligatorio{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    margin-top: 12px;
+}

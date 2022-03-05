@@ -1,1 +1,76 @@
-<p>contact works!</p>
+<div class="imagen_de_fondo wrap">
+    <img id="img_fondo" src="/../assets/images/fondo_contacto.jpg" alt="">
+
+    <!--Datos de contacto-->
+    <div class="div_datoscontacto">
+        <h1>Contáctanos</h1>
+        <table>
+            <tr>
+                <th>Dirección</th>
+                <th>Teléfonos</th>
+            </tr>
+            <tr>
+                <td><b>Oficina principal</b></td>
+                <td><b>General</b></td>
+            </tr>
+            <tr>
+                <td>Carlos Ibarra N12-11 y <br> Santa Prisca, Edificio Gómez</td>
+                <td>+ (593)99 388 3147</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+        <!--Formulario de contacto-->
+        <div class="div_form">
+            <form action="" method="post">
+                <div class="inputWithIcon">
+                    <input type="text" placeholder="Ingrese su nombre *" required>
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="inputWithIcon">
+                    <input type="email" placeholder="Ingrese su correo *" required>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="inputWithIcon">
+                    <select name="proyectos" id="proyectos" required>
+                        <option value="0" disabled selected class="placeholder_option">Seleccione el proyecto de su preferencia *</option>
+                        <option value="1">Riachuel</option>
+                        <option value="2">Casa Solar</option>
+                        <option value="3">Edificio Kamus</option>
+                        <option value="4">La casa blanca</option>
+                        <option value="5">Edificio verde</option>
+                    </select>
+                    <i class="fa fa-building-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="inputWithIcon">
+                    <select name="financiamiento" id="financiamiento" required>
+                        <option value="0" disabled selected class="placeholder_option">Seleccione el tipo de financiamiento *</option>
+                        <option value="1">Contado</option>
+                        <option value="2">Financiado</option>
+                    </select>
+                    <i class="fa fa-money" aria-hidden="true"></i>
+                </div>
+
+
+                <div class="inputWithIcon">
+                    <textarea name="comentario" id="textarea" rows="3" cols="50" placeholder="Ingrese un comentario"></textarea>
+                    <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                </div>
+
+                <div class="div_checkbox">
+                    <input type="checkbox">
+                    <label for="checkbox"> Sí, deseo suscribirme al blog y últimas noticias</label>
+                </div>
+
+                <p id="campos_obligatorio">* Campos obligatorios</p>
+
+                <div id="button_form">
+                    <button id="button" type="submit">Quiero más información</button>
+                </div>
+            </form>
+        </div>
+    
