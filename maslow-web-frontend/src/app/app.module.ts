@@ -14,6 +14,7 @@ import { SocialBarComponent } from './components/commons/social-bar/social-bar.c
 import { FormComponent } from './components/commons/form/form.component';
 import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
+import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { CardComponent } from './components/cards/card/card.component';
     FormComponent,
     CardsComponent,
     CardComponent
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
