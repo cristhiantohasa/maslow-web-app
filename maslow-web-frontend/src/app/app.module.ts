@@ -12,6 +12,8 @@ import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { SocialBarComponent } from './components/commons/social-bar/social-bar.component';
 import { FormComponent } from './components/commons/form/form.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { CardComponent } from './components/cards/card/card.component';
 import { ProjectComponent } from './components/project/project.component';
 
 @NgModule({
@@ -26,6 +28,8 @@ import { ProjectComponent } from './components/project/project.component';
     ContactComponent,
     SocialBarComponent,
     FormComponent,
+    CardsComponent,
+    CardComponent
     ProjectComponent
   ],
   imports: [

@@ -1,0 +1,50 @@
+/* Texto en negrita para los títulos */
+.card{
+    transition: all linear 0.35s;
+}
+.btn{
+    border: none;
+    background-color: #F05454;
+    transition: all linear 0.35s;
+}
+
+.btn
+
+.name-proyect{
+    font-size: 1.5em;
+}
+.name-proyect, .name-architect, .date-delivery{
+    font-weight: bold;
+}
+
+.name-architect-name, .date-delivery-date{
+    margin-left: 4vh;
+}
+
+.material-icons{
+    font-size: em;
+    color: #EABE3F;
+    transition: all linear 0.35s;
+}
+
+.card-footer{
+    background-color: transparent;
+}
+
+
+.card:hover{
+    background-color: #EABE3F;
+}
+
+.card:hover .material-icons{
+    color: #30475E;
+
+}
+
+.btn:hover{
+    background-color: #30475E;
+}
+
+.btn:hover .material-icons{
+    color: #f5f5f5;
+}
