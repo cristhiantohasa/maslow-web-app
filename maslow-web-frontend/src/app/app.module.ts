@@ -16,6 +16,7 @@ import { CardsComponent } from './components/cards/cards.component';
 import { CardComponent } from './components/cards/card/card.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ViewLastProjectComponent } from './components/commons/view-last-project/view-last-project.component';
+import { ArchitectsCardComponent } from './components/architects/architects-card/architects-card.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ViewLastProjectComponent } from './components/commons/view-last-project
     CardsComponent,
     CardComponent,
     ProjectComponent,
-    ViewLastProjectComponent
+    ViewLastProjectComponent,
+    ArchitectsCardComponent
   ],
   imports: [
     BrowserModule,
