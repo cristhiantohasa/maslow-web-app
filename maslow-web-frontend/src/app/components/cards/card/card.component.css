@@ -1,4 +1,3 @@
-/* Texto en negrita para los títulos */
 .card{
     transition: all linear 0.35s;
 }
@@ -7,8 +6,6 @@
     background-color: #F05454;
     transition: all linear 0.35s;
 }
-
-.btn
 
 .name-proyect{
     font-size: 1.5em;
