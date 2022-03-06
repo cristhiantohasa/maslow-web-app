@@ -1,63 +1,11 @@
-.wrap{
-    width: 1250px;
-    margin: 0px auto;
-} 
-
-/*FOOTER*/
-.div_footer{
-    margin-top: 20px;
-    overflow: hidden;
+footer{
+    color: grey !important;
 }
 
-#img_footer img{
-    width: 300px;
-    transform: translate(0%,90%);
+.text-info{
+    color: grey!important;
 }
 
-#contacto_footer{
-    transform: translate(38%,-10%);
-}
-
-#contacto_footer p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-#contacto_footer p i{
-    padding: 10px;
-    background: rgb(231, 226, 226);
-    border-radius: 20px;
-    margin: 4px;
-}
-
-#contacto_footer p i:hover{
-    background: goldenrod;
-    border-radius: 10px;
-    border: 1px solid goldenrod;
-}
-
-
-#redes_footer{
-    transform: translate(88%,-130%);
-}
-
-#redes_footer p {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 20px;
-}
-
-#redes_footer p i{
-    padding: 10px;
-    background: rgb(231, 226, 226);
-    border-radius: 20px;
-    margin: 4px;
-}
-
-#redes_footer p a:hover{
-    color: goldenrod;
-}
-
-#redes_footer p a{
-    text-decoration: none;
-    color: black;
+i{
+    color: grey!important;
 }
