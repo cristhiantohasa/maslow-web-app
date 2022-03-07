@@ -23,8 +23,8 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deleteProject() { 
-    this._projectService.deleteProject( this.project.name ).subscribe(
+  deleteProject( projectName: String ) { 
+    this._projectService.deleteProject( projectName ).subscribe(
       response => {
         if( response.project ) {
           alert( "Proyecto eliminado con éxito" )

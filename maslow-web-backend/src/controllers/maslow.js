@@ -66,7 +66,7 @@ var controller = {
 
     deleteProject:function( req, res ){
         var projectName = req.params.name;
-        Project.findOneAndRemove( {nombre: projectName},( err, removed ) => {
+        Project.findOneAndRemove( {name: projectName},( err, removed ) => {
             if( err ) return res.status( 500 ).send( {message:'Error al eliminar el proyecto'} );
             if( !removed ) return res.status( 404 ).send( {message:'El proyecto no existe'} );
             return res.status( 200 ).send( {project: removed} );
