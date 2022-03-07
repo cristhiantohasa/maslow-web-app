@@ -22,7 +22,8 @@
 
 .mision-section .img-head img{
     width: 80%;
-    align-self: center;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 
 .mision-section .img-head::after{
@@ -35,15 +36,17 @@
     font-weight: bold;
     font-size: 58px;
     margin-bottom: 30px;
+    margin-left: 10vh;
 }
 
 .mision-section .break-small{
-    width: 80%;
+    width: 90%;
     height: 3px;
 }
 
 .mision-section .text-para-mision{
     font-size: 20px;
+    margin-left: 10vh;
 }
 
 .text-head-valores{
