@@ -7,6 +7,7 @@ import { FooterComponent } from './components/commons/footer/footer.component';
 import { ViewLastProjectComponent } from './components/commons/view-last-project/view-last-project.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { ProjectComponent } from './components/project/project.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 
 const routes: Routes = [
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'cards', component:CardsComponent},
   {path:'footer', component:FooterComponent },
   {path:'view-last-project', component:ViewLastProjectComponent},
-  {path:'**', component:HomeComponent}
+  {path:'**', component:HomeComponent},
+  {path:'project', component:ProjectComponent}
 ];
 
 @NgModule({

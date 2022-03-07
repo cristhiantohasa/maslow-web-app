@@ -16,9 +16,10 @@
     text-decoration: none;
     color: black;
     cursor: pointer;
+    transition: all 200ms;
 }
 
-#manu ul li a:hover{
+#menu ul li a:hover{
     transform: scale(1.5, 1.5);
 }
 
