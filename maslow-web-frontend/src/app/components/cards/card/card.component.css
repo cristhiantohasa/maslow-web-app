@@ -5,6 +5,7 @@
     border: none;
     background-color: #F05454;
     transition: all linear 0.35s;
+    margin-left: 10vh;
 }
 
 .name-proyect{

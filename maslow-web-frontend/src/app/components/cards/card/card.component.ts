@@ -35,6 +35,7 @@ export class CardComponent implements OnInit {
         console.log( <any>error );
       }
     );
+    
   }
 
 }
