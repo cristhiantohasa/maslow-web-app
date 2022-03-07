@@ -1,23 +1,24 @@
 <div class="container mt-5">
+  <!--Title-->
+  <div class="title col-lg-12 row">
+    <h2 class="text-center">Buscar</h2>
+</div>
+<!--Textbox-->
+<div class="textbox col-lg-12 row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="input-group">
+            <input #name type="text" class="form-control" placeholder="Ingresa el nombre del proyecto">
+            <button class="btn btn-outline-secondary" type="button" (click)="readProject()">Buscar</button>
+        </div>
+    </div>
+    <div class="col-lg-3"></div>
+</div>
   <h2 class="titulo-proyectos">Proyectos</h2>
 
   <!--Search-->
   <section class="search row">
-    <!--Title-->
-    <div class="title col-lg-12 row">
-        <h2 class="text-center">Buscar</h2>
-    </div>
-    <!--Textbox-->
-    <div class="textbox col-lg-12 row">
-        <div class="col-lg-3"></div>
-        <div class="col-lg-6">
-            <div class="input-group">
-                <input #name type="text" class="form-control" placeholder="Ingresa el nombre del proyecto">
-                <button class="btn btn-outline-secondary" type="button" (click)="readProject()">Buscar</button>
-            </div>
-        </div>
-        <div class="col-lg-3"></div>
-    </div>
+    
 
 
 
@@ -41,7 +42,11 @@
 
   </div>
 
-  <app-create-project></app-create-project>
+  <div class="mt-5">
+    <app-create-project></app-create-project>
+  </div>
+
+  
 
   
 </div>
