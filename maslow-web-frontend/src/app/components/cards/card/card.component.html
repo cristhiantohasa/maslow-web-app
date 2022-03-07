@@ -28,10 +28,12 @@
       </div>
       <div class="card-footer align-middle">
         <div class="d-grid gap-2 align-middle">
-          <button type="button" class="btn btn-primary btn-lg align-middle"> 
-            <span class="material-icons align-middle" id="view-project">visibility</span>
-            Ver el proyecto
-          </button>
+          <a [routerLink]="['/read-project',project.name]">
+            <button type="button" class="btn btn-primary btn-lg align-middle"> 
+              <span class="material-icons align-middle" id="view-project">visibility</span>
+              Ver el proyecto
+            </button>
+          </a>
         </div>
       </div>
     </div>
