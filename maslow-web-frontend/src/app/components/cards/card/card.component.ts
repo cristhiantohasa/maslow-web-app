@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Global } from '../../../services/global';
 
 @Component({
   selector: 'app-card',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  @Input() project: any;
+  
+  public url: string;
+  
+  constructor() {
+    this.url = Global.url;
+  }
 
   ngOnInit(): void {
   }
