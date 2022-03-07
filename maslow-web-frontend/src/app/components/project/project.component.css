@@ -1,0 +1,120 @@
+.detalles-proyecto-section h5{
+    font-weight: bold;
+}
+
+.detalles-proyecto-section h4{
+    color: #30475e;
+}
+
+.center-vertical{
+    display: flex;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+}
+
+.detalles-proyecto-section{
+    width: 100%;
+    padding: calc(5% + 30px) 0px;
+}
+.detalles-proyecto-section .proyecto-name{
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+}
+.detalles-proyecto-section .fecha-entrega{
+    text-align: right;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.detalles-proyecto-section .datos-arquitecto{
+    margin-bottom: 40px;
+}
+
+.detalles-proyecto-section .datos-sector{
+    margin-bottom: 50px;
+}
+
+.material-icons{
+    font-size: em;
+    color: #EABE3F;
+    transition: all linear 0.35s;
+}
+
+.detalles-proyecto-section .img-proyecto{
+    position: relative;
+}
+.detalles-proyecto-section .img-proyecto img{
+    width: 100%;
+}
+
+
+.ventas-header{
+    text-align: center;
+}
+
+.sala-ventas-section{
+    background-color: #30475e;
+}
+
+.sala-ventas-section h1{
+    color: white;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 60px;
+}
+
+.sala-ventas-section .img-head{
+    position: relative;
+}
+
+.sala-ventas-section .img-head img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.sala-ventas-section .ventas-detalles{
+    color: #f05454;
+    margin-left: 50px;
+}
+
+.sala-ventas-section .ventas-numero{
+    color: #EABE3F;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+
+.sala-ventas-section .horario-ventas{
+    color: #EABE3F;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.financiamiento-section h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.financiamiento-section h2{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.financiamiento-section h3{
+    text-align: center;
+    font-size: 30px;
+}
+
+.financiamiento-section h4{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #30475e;
+}
