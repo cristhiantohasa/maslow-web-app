@@ -27,7 +27,12 @@
     margin-left: 90px;
 }
 
+#linkWhats{
+    color: black;
+}
+
 a{
     font-weight: bolder;
     font-size: 20px;
+    text-decoration: none;
 }
