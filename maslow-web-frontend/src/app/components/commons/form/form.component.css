@@ -50,3 +50,43 @@
     color: #30475E;
     border: none;
 }
+
+
+.wrap{
+    width: 1250px;
+    margin: 0px auto;
+} 
+
+
+/*-------------------------------------------------------------------*/
+/* FORMULARIO DE CÓMO PODEMOS AYUDARTE*/
+#mensajes{
+    margin-top: 60px;
+}
+
+#h2_mensaje{
+    margin-bottom: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 55px;
+}
+
+#p_mensaje{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+
+#telefono_mensaje{
+    font-size: 25px;
+    margin-top: 30px;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    color: goldenrod;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 300px;
+}
+
+#telefono_mensaje:hover{
+    color: black;
+    background: goldenrod;
+}
