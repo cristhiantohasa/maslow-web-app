@@ -13,14 +13,15 @@ import { ProjectsComponent } from './components/projects/projects.component';
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'projects', component:CardsComponent},
+  {path:'project', component:ProjectComponent},
   {path:'architects', component:ArchitectsComponent},
   {path:'about-us', component:AboutUsComponent},
   {path:'contact', component:ContactComponent},
   {path:'cards', component:CardsComponent},
   {path:'footer', component:FooterComponent },
   {path:'view-last-project', component:ViewLastProjectComponent},
-  {path:'**', component:HomeComponent},
-  {path:'project', component:ProjectComponent}
+  {path:'**', component:HomeComponent}
+  
 ];
 
 @NgModule({
