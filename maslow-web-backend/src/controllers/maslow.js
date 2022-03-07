@@ -186,7 +186,7 @@ var controller = {
     },
 
     readImage:function( req, res ){
-        var file = req.params.imagen;
+        var file = req.params.image;
         var path_file = './src/uploads/' + file;
         fs.exists( path_file, ( exists ) => {
             if( exists ){

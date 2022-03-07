@@ -9,6 +9,24 @@
     </div>
     <!-- Fin -->
     
+    <!--Products-->
+<section class="products row">
+  <!--Title-->
+  <div class="title col-lg-12 row">
+      <h2 class="text-center">Productos</h2>
+  </div>
+  <!--Product-->
+  <div class="product col-lg-4 row" *ngFor="let project of projects">
+      <div class="text-center">
+          <img [src]="url+'read-image/'+project.image" alt="project">
+      </div>
+      <div class="text-center">
+          <h3>{{ project.name }}</h3>
+          <span>${{ project.date  }}</span>
+      </div>
+  </div>
+</section>
 
 
   </div>
+

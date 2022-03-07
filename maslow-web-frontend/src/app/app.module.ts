@@ -17,6 +17,8 @@ import { CardComponent } from './components/cards/card/card.component';
 import { ProjectComponent } from './components/project/project.component';
 import { ViewLastProjectComponent } from './components/commons/view-last-project/view-last-project.component';
 import { ArchitectsCardComponent } from './components/architects/architects-card/architects-card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { ArchitectsCardComponent } from './components/architects/architects-card
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
