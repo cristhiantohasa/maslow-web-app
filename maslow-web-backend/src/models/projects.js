@@ -11,7 +11,8 @@
      type: String,
      entry: Number,
      dues: Number,
-     against: Number
+     against: Number,
+     image: String
  } );
 
  module.exports = mongoose.model( 'projects', ProjectSchema );

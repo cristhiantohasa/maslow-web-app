@@ -14,13 +14,14 @@ router.get( '/read-project/:name', MaslowController.readProject );
 router.put( '/update-project/:id', MaslowController.updateProject );
 router.delete( '/delete-project/:name', MaslowController.deleteProject );
 
-router.post( '/upload-image/:id', multiPartMiddleware, MaslowController.uploadImage );
-router.get( '/read-image/:image', MaslowController.readImage );
-
 router.post( '/create-architect', MaslowController.createArchitect );
 router.get( '/read-architects', MaslowController.readArchitects );
 router.get( '/read-architect/:name', MaslowController.readArchitect );
 router.put( '/update-architect/:id', MaslowController.updateArchitect );
 router.delete( '/delete-architect/:name', MaslowController.deleteArchitect );
+
+router.post( '/upload-image-project/:id', multiPartMiddleware, MaslowController.uploadImageProject );
+router.post( '/upload-image-architect/:id', multiPartMiddleware, MaslowController.uploadImageArchitect );
+router.get( '/read-image/:image', MaslowController.readImage );
 
 module.exports = router;

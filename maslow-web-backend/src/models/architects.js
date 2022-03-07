@@ -9,7 +9,8 @@
      nationality: String,
      about: String,
      projects: String,
-     socialMedia: String
+     socialMedia: String,
+     image: String
  } );
 
  module.exports = mongoose.model( 'architects', ArchitectSchema );

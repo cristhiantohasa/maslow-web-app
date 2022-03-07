@@ -26,6 +26,7 @@ var controller = {
         project.entry = params.entry;
         project.dues = params.dues;
         project.against = params.against;
+        project.image = null;
         
         project.save( ( err, stored ) => {
             if( err ) return res.status( 500 ).send( {message:'Error al guardar el proyecto'} );
@@ -83,6 +84,7 @@ var controller = {
         architect.about = params.about;
         architect.projects = params.projects;
         architect.socialMedia = params.socialMedia;
+        architect.image = null;
         
         architect.save( ( err, stored ) => {
             if( err ) return res.status( 500 ).send( {message:'Error al guardar el arquitecto'} );
@@ -129,9 +131,36 @@ var controller = {
         })
     },
 
-    uploadImage:function( req, res ){
+    uploadImageProject:function( req, res ){
 
         var projectId = req.params.id;
+        var fileName = "No se subio la imagen";
+        
+        if( req.files ){
+            var filePath = req.files.image.path;
+            var file_split = filePath.split( '\\' );
+            var fileName = file_split[2];
+            var extSplit = fileName.split( '\.' );
+            var fileExt = extSplit[1];
+            if( fileExt == 'png' || fileExt == 'jpg' || fileExt=='jpeg' || fileExt == 'gif' ){
+                Project.findByIdAndUpdate( projectId, {image: fileName}, {new: true}, ( err, updated ) => {
+                    if( err ) return res.status( 500 ).send( {message:'No se subio la imagen'} );
+                    if( !updated ) return res.status( 404 ).send( {message: 'El proyecto no existe'} );
+                    return res.status( 200 ).send( {project: updated} );
+                });
+            } else {
+                fs.unlink( filePath, ( err ) => {
+                    return res.status( 200 ).send( {message: 'La extension del archivo no es valida'} );
+                } );
+            }
+        }else{
+            return res.status( 200 ).send( {message: fileName} );
+        }
+    },
+
+    uploadImageArchitect:function( req, res ){
+
+        var architectId = req.params.id;
         var fileName = "No se subio la imagen";
         
         if( req.files ){
@@ -141,10 +170,10 @@ var controller = {
             var extSplit = fileName.split( '\.' );
             var fileExt = extSplit[1];
             if( fileExt == 'png' || fileExt == 'jpg' || fileExt=='jpeg' || fileExt == 'gif' ){
-                Project.findByIdAndUpdate( projectId, {imagen: fileName}, {new: true}, ( err, updatedProject ) => {
+                Architect.findByIdAndUpdate( architectId, {imagen: fileName}, {new: true}, ( err, updated ) => {
                     if( err ) return res.status( 500 ).send( {message:'No se subio la imagen'} );
-                    if( !updatedProject ) return res.status( 404 ).send( {message: 'El proyecto no existe'} );
-                    return res.status( 200 ).send( {project: updatedProject} );
+                    if( !updated ) return res.status( 404 ).send( {message: 'El arquitecto no existe'} );
+                    return res.status( 200 ).send( {architect: updated} );
                 });
             } else {
                 fs.unlink( filePath, ( err ) => {
