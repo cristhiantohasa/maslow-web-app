@@ -19,6 +19,7 @@ import { ViewLastProjectComponent } from './components/commons/view-last-project
 import { ArchitectsCardComponent } from './components/architects/architects-card/architects-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { CreateProjectComponent } from './components/commons/create-project/create-project.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     CardComponent,
     ProjectComponent,
     ViewLastProjectComponent,
-    ArchitectsCardComponent
+    ArchitectsCardComponent,
+    CreateProjectComponent
   ],
   imports: [
     BrowserModule,

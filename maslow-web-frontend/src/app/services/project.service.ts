@@ -30,7 +30,7 @@ export class ProjectService {
   createProject( project: Project ): Observable<any> {
     let params = JSON.stringify( project );
     let headers = new HttpHeaders().set( 'Content-Type', 'application/json' );
-    return this._http.post( this.url + 'create-project', params, {headers: headers} );
+    return this._http.post( this.url + 'create-project/', params, {headers: headers} );
   }
 
   updateProject( project: Project ): Observable<any> {
