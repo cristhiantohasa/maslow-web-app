@@ -38,7 +38,7 @@ import { CreateProjectComponent } from './components/commons/create-project/crea
     ProjectComponent,
     ViewLastProjectComponent,
     ArchitectsCardComponent,
-    CreateProjectComponent
+    CreateProjectComponent,
   ],
   imports: [
     BrowserModule,
