@@ -31,7 +31,11 @@
                 </div>
                 <div class="text-start">
                     <label for="type">Tipo *</label>
-                    <input required #type="ngModel" type="text" name="type" class="form-control" placeholder="Tipo del proyecto" [(ngModel)]="project.type">
+                    <select required #type="ngModel" value="Edificio" name="type" class="form-control" placeholder="Tipo del proyecto" [(ngModel)]="project.type">
+                        <option selected value="Edificio">Edificio</option>
+                        <option value="Residencia">Residencia</option>
+                        <option value="Arriendo">Arriendo</option>
+                    </select>
                     <span *ngIf="type.touched && !type.valid">Tipo Requerido</span>
                 </div>
                 <div class="text-start">
