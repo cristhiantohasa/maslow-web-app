@@ -11,43 +11,40 @@
                     <div class="fecha-entrega">
                         <h5>Fecha de entrega</h5>
                         <!--Cambia la fecha de entrega-->
-                        <h4>Cuarto trimestre del 2023</h4>
+                        <h4>{{project.date}}</h4>
+                        <hr>
                     </div>
                     <div class="datos-arquitecto">
                         <h5>Arquitecto</h5>
                         <!--Cambia el nombre del arquitecto-->
-                        <h4>Matthew Olaoluwa</h4>
+                        <h4>{{project.architect}}</h4>
                     </div>
                     <div class="datos-sector">
                         <h5>Sector</h5>
                         <!--Cambia el sector-->
-                        <h4>La carolina</h4>
+                        <h4>{{project.sector}}</h4>
                     </div>
                     <div class="row">
-                        <div class="col-12 col-md-4 mb-2 mb-md-0">
-                            <div class="">
-                                <span class="material-icons d-flex justify-content-center">home</span>
-                                <p class="d-flex justify-content-center">Residencia</p>
+                        <div class="row justify-content-center">
+                            <div class="col" *ngIf="project.type == 'Residencia'">
+                              <span class="material-icons d-flex justify-content-center">home</span>
+                              <p class="d-flex justify-content-center">Residencia</p>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 mb-2 mb-md-0">
-                            <div class="">
-                                <span class="material-icons d-flex justify-content-center">business</span>
-                                <p class="text d-flex justify-content-center">Edificio</p>
+                            <div class="col" *ngIf="project.type == 'Edificio'">
+                              <span class="material-icons d-flex justify-content-center">business</span>
+                              <p class="text d-flex justify-content-center">Edificio</p>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-4 mb-2 mb-md-0">
-                            <div class="">
-                                <span class="material-icons d-flex justify-content-center">groups</span>
-                                <p class="text d-flex justify-content-center">Arriendo</p>
+                            <div class="col" *ngIf="project.type == 'Arriendo'">
+                              <span class="material-icons d-flex justify-content-center">groups</span>
+                              <p class="text d-flex justify-content-center">Arriendo</p>
                             </div>
-                        </div>
+                          </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <!--Cambia la imagen del proyecto-->
                     <div class="img-proyecto">
-                        <img src="https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg">
+                        <img [src]="url+'read-image/'+project.image">
                     </div>
                 </div>
                 

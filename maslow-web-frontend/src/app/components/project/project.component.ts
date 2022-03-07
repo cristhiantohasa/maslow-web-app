@@ -10,7 +10,7 @@ import { ActivatedRoute, Router, Params } from '@angular/router';
   styleUrls: ['./project.component.css'],
   providers:[ProjectService]
 })
-export class ProjectComponent implements OnInit {
+export class ProjectComponent implements OnInit{
 
   public url:string;
   public project:Project;
