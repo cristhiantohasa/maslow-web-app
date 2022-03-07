@@ -1,53 +1,95 @@
-<!--Formulario de contacto-->
-<div class="div_form">
-    <form action="" method="post">
-        <div class="inputWithIcon">
-            <input type="text" placeholder="Ingrese su nombre *" required>
-            <i class="fa fa-user-o" aria-hidden="true"></i>
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="row fila-text">
+          <p class="fw-bold fs-1">Contáctanos</p>
+          <div class="row">
+            <div class="container">
+              <div class="row">
+                <div class="col">
+                  <p class="fw-bold fs-3">Dirección</p>
+                  <p class="fw-bold"> Oficina Principal</p>
+                  <p class="fw-normal">Carlos Ibarra N 12-11 y Santa Prisca, Edificio Gómez</p>
+                </div>
+                <div class="col">
+                  <p class="fw-bold fs-3">Teléfonos</p>
+                  <a class="link-secondary text-decoration-none d-flex align-items-center" href="tel:+593987413874">+593
+                    98 7413 874</a>
+  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="inputWithIcon">
-            <input type="email" placeholder="Ingrese su correo *" required>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <div class="w-100"></div>
+        <div class="row fila-text">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d249.3618974659307!2d-78.50515904106028!3d-0.21450469669562774!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x91d59bbead4dff1f%3A0x6ac756cae6650545!2sORPASEG%20C%C3%ADa.%20Ltda.%2C%20Carlos%20Ibarra%2C%20Quito%20170130!3m2!1d-0.2145348!2d-78.50507209999999!5e0!3m2!1ses!2sec!4v1646639241962!5m2!1ses!2sec"
+            allowfullscreen="" loading="lazy" class="mapa"></iframe>
         </div>
-
-        <div class="inputWithIcon">
-            <select name="proyectos" id="proyectos" required>
-                <option value="0" disabled selected class="placeholder_option">Seleccione el proyecto de su preferencia *</option>
-                <option value="1">Riachuel</option>
-                <option value="2">Casa Solar</option>
-                <option value="3">Edificio Kamus</option>
-                <option value="4">La casa blanca</option>
-                <option value="5">Edificio verde</option>
-            </select>
-            <i class="fa fa-building-o" aria-hidden="true"></i>
+      </div>
+      <div class="col">
+        <div class="container p-2 myContainer justify-content-center">
+          <form>
+  
+            <div class="form-row">
+              <div class="form-group col-md-8 p-1">
+                <label for="inputName">Ingresa tu nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Ej: Luis Almeida">
+              </div>
+              <div class="form-group col-md-8 p-1">
+                <label for="inputEmail">Ingresa Correo Electrónico</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Ej: luis.almeida@mail.com">
+              </div>
+  
+              <div class="form-group col-md-8 p-1">
+                <label for="selectProject">Selecciona el proyecto</label>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectProject">
+                  <option selected>Selecciona un proyecto</option>
+                  <option value="1">Proyecto 1</option>
+                  <option value="2">Proyecto 2</option>
+                  <option value="3">Proyecto 3</option>
+                  <option value="4">Proyecto 4</option>
+                  <option value="5">Proyecto 5</option>
+                </select>
+              </div>
+  
+              <div class="form-group col-md-8 p-1">
+                <label for="selectFinancing">Selecciona el tipo de financiamiento</label>
+                <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectFinancing">
+                  <option selected>Selecciona el tipo de financiamiento</option>
+                  <option value="1">Contado</option>
+                  <option value="2">Directo</option>
+                </select>
+              </div>
+  
+              <div class="form-group col-md-8 p-1">
+                <label for="floatingTextarea">Déjanos un comentario</label>
+                <textarea class="form-control" placeholder="Ingresa un comentario" id="floatingTextarea"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="Terminos">
+                <label class="form-check-label" for="gridCheck">
+                  Acepto los términos y condiciones
+                </label>
+              </div>
+  
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="Suscribirme">
+                  <label class="form-check-label" for="gridCheck">
+                    Deseo suscribirme
+                  </label>
+              </div>
+  
+            </div>
+            <div class="d-grid col-md-8">
+              <button class="btn btn-primary" type="button">Quiero más información</button>
+          </div>
+          </form>
         </div>
-
-        <div class="inputWithIcon">
-            <select name="financiamiento" id="financiamiento" required>
-                <option value="0" disabled selected class="placeholder_option">Seleccione el tipo de financiamiento *</option>
-                <option value="1">Contado</option>
-                <option value="2">Financiado</option>
-            </select>
-            <i class="fa fa-money" aria-hidden="true"></i>
-        </div>
-
-
-        <div class="inputWithIcon">
-            <textarea name="comentario" id="textarea" rows="3" cols="50" placeholder="Ingrese un comentario"></textarea>
-            <i class="fa fa-commenting-o" aria-hidden="true"></i>
-        </div>
-
-        <div class="div_checkbox">
-            <input type="checkbox">
-            <label for="checkbox"> Sí, deseo suscribirme al blog y últimas noticias</label>
-        </div>
-
-        <p id="campos_obligatorio">* Campos obligatorios</p>
-
-        <div id="button_form">
-            <button id="button" type="submit">Quiero más información</button>
-        </div>
-    </form>
-</div>
-
+      </div>
+    </div>
+  </div>
+  
