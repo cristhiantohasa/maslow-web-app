@@ -11,7 +11,7 @@
             <form #productForm="ngForm" (ngSubmit)="createProject(productForm)">
                 <div class="text-start">
                     <label for="name">Nombre</label>
-                    <input required #name="ngModel" class="form-control" name="name" type="text" placeholder="Nombre del proyecto" [(ngModel)]="project.name">
+                    <input  #name="ngModel" class="form-control" name="name" type="text" placeholder="No mbre del proyecto" [(ngModel)]="project.name" required>
                     <span *ngIf="name.touched && !name.valid">Nombre Requerido</span>
                 </div>
                 <div class="text-start">
