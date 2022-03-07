@@ -1,7 +1,7 @@
 <div class="card h-100">
-  <img class="card-img-top" src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg" alt="Card image cap">
+  <img class="card-img-top" [src]="url+'read-image/'+architect.image" alt="archhitect">
   <div class="card-img-overlay name-architect d-flex justify-content-center align-items-center">
     <button type="button" class="btn btn-primary btn-lg align-middle">
-      <p class="fw-bold fs-1 ">Savannah Nguyen</p>
+      <p class="fw-bold fs-1 ">{{ architect.name }}</p>
     </button>
   </div>

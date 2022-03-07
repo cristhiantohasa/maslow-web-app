@@ -164,13 +164,13 @@ var controller = {
         var fileName = "No se subio la imagen";
         
         if( req.files ){
-            var filePath = req.files.imagen.path;
+            var filePath = req.files.image.path;
             var file_split = filePath.split( '\\' );
             var fileName = file_split[2];
             var extSplit = fileName.split( '\.' );
             var fileExt = extSplit[1];
             if( fileExt == 'png' || fileExt == 'jpg' || fileExt=='jpeg' || fileExt == 'gif' ){
-                Architect.findByIdAndUpdate( architectId, {imagen: fileName}, {new: true}, ( err, updated ) => {
+                Architect.findByIdAndUpdate( architectId, {image: fileName}, {new: true}, ( err, updated ) => {
                     if( err ) return res.status( 500 ).send( {message:'No se subio la imagen'} );
                     if( !updated ) return res.status( 404 ).send( {message: 'El arquitecto no existe'} );
                     return res.status( 200 ).send( {architect: updated} );

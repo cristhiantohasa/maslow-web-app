@@ -2,8 +2,9 @@
     <h2>Arquitectos</h2>
     <div class="mt-4 row row-cols-1 row-cols-md-3 g-4">
       <!-- Pintamos cada una de las tarjetas -->
-      <div class="col">
-        <app-architects-card></app-architects-card>
+      <div class="col" *ngFor="let architect of architects">
+        <app-architects-card [architect]="architect">21</app-architects-card>
       </div>
       <!-- Fin -->
     </div>
+</div>

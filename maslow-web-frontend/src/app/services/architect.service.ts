@@ -19,7 +19,7 @@ export class ArchitectService {
 
   readArchitects(): Observable<any> {
     let headers = new HttpHeaders().set( 'Content-Type', 'application/json' );
-    return this._http.get( this.url + 'read-architect', {headers: headers} );
+    return this._http.get( this.url + 'read-architects', {headers: headers} );
   }
 
   readArchitect( name: String ): Observable<any> {
