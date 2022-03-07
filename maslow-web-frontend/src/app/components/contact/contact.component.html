@@ -30,36 +30,36 @@
     </div>
     <div class="col align-items-center">
       <div class="container p-2 myContainer">
-        <form>
-
+       
+        <form #form="ngForm" (ngSubmit)="guardar(form)">
           <div class="form-row">
             <div class="form-group col-md-12 p-1">
               <label for="inputName">Ingresa tu nombre</label>
-              <input type="text" class="form-control" id="inputName" placeholder="Ej: Luis Almeida">
+              <input #nombre type="text" class="form-control" id="inputName" placeholder="Ej: Luis Almeida">
             </div>
             <div class="form-group col-md-12 p-1">
               <label for="inputEmail">Ingresa Correo Electrónico</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="Ej: luis.almeida@mail.com">
+              <input #correo type="email" class="form-control" id="inputEmail" placeholder="Ej: luis.almeida@mail.com">
             </div>
 
             <div class="form-group col-md-12 p-1">
               <label for="selectProject">Selecciona el proyecto</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectProject">
+              <select #proyectos class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectProject">
                 <option selected>Selecciona un proyecto</option>
-                <option value="1">Proyecto 1</option>
-                <option value="2">Proyecto 2</option>
-                <option value="3">Proyecto 3</option>
-                <option value="4">Proyecto 4</option>
-                <option value="5">Proyecto 5</option>
+                <option value="Proyecto 1">Proyecto 1</option>
+                <option value="Proyecto 2">Proyecto 2</option>
+                <option value="Proyecto 3">Proyecto 3</option>
+                <option value="Proyecto 4">Proyecto 4</option>
+                <option value="Proyecto 5">Proyecto 5</option>
               </select>
             </div>
 
             <div class="form-group col-md-12 p-1">
               <label for="selectFinancing">Selecciona el tipo de financiamiento</label>
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectFinancing">
+              <select #financiamiento class="form-select form-select-sm" aria-label=".form-select-sm example" id="selectFinancing">
                 <option selected>Selecciona el tipo de financiamiento</option>
-                <option value="1">Contado</option>
-                <option value="2">Directo</option>
+                <option value="Contado">Contado</option>
+                <option value="Directo">Directo</option>
               </select>
             </div>
 
@@ -85,10 +85,11 @@
 
           </div>
           <div class="d-grid col-md-12">
-            <button class="btn btn-primary" type="button" >Quiero más información</button>
+            <button class="btn btn-primary" type="submit">Quiero más información</button>
         </div>
         </form>
       </div>
     </div>
   </div>
 </div>
+
